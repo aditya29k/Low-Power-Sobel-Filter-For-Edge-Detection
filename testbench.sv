@@ -81,7 +81,7 @@ module tb();
       end
       if(DUT.row == `HEIGHT-1  && DUT.col == `ROW_WIDTH-1) begin
         $fclose(file);
-        $finish(2);
+        $finish();
       end
       @(posedge intf.clk);
     end
